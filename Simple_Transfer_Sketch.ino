@@ -19,8 +19,8 @@ void setup()
 void loop()
 {
   // print the string when a newline arrives:
-  SimbleeBLE.sendInt(i);
-  i++;s
+  SimbleeBLE.sendInt(i); //sends i every 2 seconds, increasing i by 1 each time around the loop
+  i++;
   delay(2000);
 }
 

@@ -1,6 +1,6 @@
 #include <SimbleeBLE.h>
 
-int i = 5;
+int i = 1;
 
 void setup()
 {
@@ -20,6 +20,7 @@ void loop()
 {
   // print the string when a newline arrives:
   SimbleeBLE.sendInt(i); //sends i every 2 seconds, increasing i by 1 each time around the loop
+  //this actually sends a single byte, so once you get past single digits the phone starts recognizing it as punctuation, and then letters, ASCII style
   i++;
   delay(2000);
 }
